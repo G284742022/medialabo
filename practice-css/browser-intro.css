@@ -8,12 +8,16 @@ p.info {
 }
 
 h1 {
-	background-color: #7f7fcf;
+	text-shadow: 0.05em 0.05em 0.2em navy;
+	color:white;
 }
 
 h2 {
-	border: solid 1px black;
+	/* border: solid 1px #3f3faf; */
+	color:#3f3faf;
 	margin: 5px;
+	font-family: cursive;
+	background: linear-gradient( .25turn,  white, #ffefaf);
 }
 
 div#zentai {
@@ -29,7 +33,4 @@ div#zentai > div {
 }
 img.sign {
 	float: right;
-}
-title{
-	text-shadow: navy;
 }
