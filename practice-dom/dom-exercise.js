@@ -31,3 +31,10 @@ for (let n of s) {
 
 // 練習4-5 箇条書き追加プログラム
 
+let s = document.querySelector('ul#location');
+let li; 
+for (let n of data) {
+	li = document.createElement('li');   
+	  li.textContent = n.name+','+n.lat+','+n.lng;    
+	  s.insertAdjacentElement('beforeend', li);
+  }
