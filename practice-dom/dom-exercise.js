@@ -33,7 +33,7 @@ let e = document.createElement('p');
 e.insertAdjacentElement('beforeend', img2);
 div.insertAdjacentElement('beforeend', e);
 let img3 = document.createElement('img');
-img.setAttribute('src', 'hanako.png');
+img3.setAttribute('src', 'hanako.png');
 let t = document.createElement('p');
 t.insertAdjacentElement('beforeend', img3);
 div.insertAdjacentElement('beforeend', t);
