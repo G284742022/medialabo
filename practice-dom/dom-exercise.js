@@ -36,5 +36,5 @@ let li;
 for (let n of data) {
 	li = document.createElement('li');   
 	  li.textContent = n.name+','+n.lat+','+n.lng;    
-	  s.insertAdjacentElement('beforeend', li);
+	  ul.insertAdjacentElement('beforeend', li);
   }
