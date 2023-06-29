@@ -31,7 +31,7 @@ for (let n of s) {
 
 // 練習4-5 箇条書き追加プログラム
 
-let s = document.querySelector('ul#location');
+let ul = document.querySelector('ul#location');
 let li; 
 for (let n of data) {
 	li = document.createElement('li');   
