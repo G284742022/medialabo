@@ -18,27 +18,29 @@ function hantei() {
   let yoso=Number(kaito);
   // 課題3-1: 正解判定する
   let a = document.querySelector('span#answer');       
-  a.textContent = yoso;                          
+  a.textContent = yoso;          
+  let r = document.querySelector('p#result');                
   if(4<=kaisu){
-    console.log('答えは'+kotae+'でした。すでにゲームは終わっています。')  
+    console.log('答えは'+kotae+'でした。すでにゲームは終わっています。');
+    r.textContent ='正解です。おめでとう!';        
   }else{
     kaisu=kaisu+1;
       let k= document.querySelector('span#kaisu');         
       k.textContent = kaisu;                  
     if(kotae===yoso){
-      let r = document.querySelector('span#result');
+      //let r = document.querySelector('span#result');
       r.textContent ='正解です。おめでとう!';        
     }else{
-      if(kaisuu===3){
-        let r1 = document.querySelector('span#result');
-        r1.textContent ='まちがい．残念でした答えは'+kotae+'です。';   
+      if(kaisu===3){
+        //let r1 = document.querySelector('span#result');
+        r.textContent ='まちがい．残念でした答えは'+kotae+'です。';   
       }else {
       if (kaisu<=2&&kotae>yoso){
-        let r2 = document.querySelector('span#result');
-        r2.textContent ='まちがい。答えはもっと大きいですよ';    
+       // let r2 = document.querySelector('span#result');
+        r.textContent ='まちがい。答えはもっと大きいですよ';    
       }else if(kaisu<=2&&kotae<yoso){
-        let r3 = document.querySelector('span#result');
-        r3.textContent ='まちがい。答えはもっと小さいですよ。';   
+        //let r3 = document.querySelector('span#result');
+        r.textContent ='まちがい。答えはもっと小さいですよ。';   
       }
     }
     }
