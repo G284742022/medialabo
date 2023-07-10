@@ -1,3 +1,27 @@
-tr {
-    color:aqua;
+h1.midasi {
+    text-align: center;
+    color: #0040ffce;
+  border: solid 3px #173fb9;
+  padding: 0.5em;
+  border-radius: 0.5em;
 }
+
+h2 {
+    position: relative;
+    background: #d5fef5;
+    box-shadow: 0px 0px 0px 5px #baf4f4;
+    border: dashed 2px rgb(255, 255, 255);
+    padding: 0.2em 0.5em;
+    color: #6a1515;
+  }
+  h2:after {
+    position: absolute;
+    content: '';
+    left: -7px;
+    top: -7px;
+    border-width: 0 0 15px 15px;
+    border-style: solid;
+    border-color: #fff #fff #a8d4ff;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  }
+  
