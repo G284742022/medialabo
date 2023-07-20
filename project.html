@@ -4,29 +4,45 @@
     <meta charset="utf-8">
     <title>project</title>
     <link rel="stylesheet" href="project.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <script src="project.js" defer=""></script>
   </head>
   <body>
+    
+    <h1>世界の天気</h1>
+    <button id="japan">日本</button>
+    <button id="Cairo">エジプト</button>
+    <button id="Moscow">ロシア</button>
+    <button id="Johannesburg">南アフリカ</button>
+    <button id="Beijing">中華人民共和国</button>
+    <button id="Singapore">シンガポール</button>
+    <button id="Sydney">シドニー</button>
+    <button id="London">イギリス</button>
+    <button id="Paris">フランス</button>
+    <button id="RiodeJaneiro">ブラジル</button>
+    <button id="NewYork">アメリカ合衆国(ニューヨーク)</button>
+    <button id="LosAngeles">アメリカ合衆国(ロサンゼルス)</button>
+
     <div class="zentai">
       <div>
-        <h1>都市名</h1>
-        <p></p>
+        <h2>都市名</h2>
+        <span id="toshi"></span>
       </div>
       <div>
-        <h1>天気</h1>
-        <p></p>      
+        <h2>天気</h2>
+        <span id="weather"></span>    
       </div>
       <div>
-        <h1>最高気温</h1>
-        <p></p>
+        <h2>最高気温</h2>
+        <span id="temp_max"></span>
       </div>
       <div>
-        <h1>最低気温</h1>
-        <p></p>
+        <h2>最低気温</h2>
+        <span id="temp_min"></span>
       </div>
       <div>
-        <h1>湿度</h1>
-        <p></p>
+        <h2>湿度</h2>
+        <span id="humidity"></span>
       </div>
     </div>
   </body>
