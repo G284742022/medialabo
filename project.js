@@ -1,3 +1,36 @@
+let c1 = document.querySelector('#japan');
+c1.addEventListener('click', changeColor);
+let c2 = document.querySelector('#Cairo');
+c2.addEventListener('click', changeColor);
+let c3 = document.querySelector('#Moscow');
+c3.addEventListener('click', changeColor);
+let c4 = document.querySelector('#Johannesburg');
+c4.addEventListener('click', changeColor);
+let c5 = document.querySelector('#Beijing');
+c5.addEventListener('click', changeColor);
+let c6 = document.querySelector('#Singapore');
+c6.addEventListener('click', changeColor);
+let c7 = document.querySelector('#Sydney');
+c7.addEventListener('click', changeColor);
+let c8 = document.querySelector('#London');
+c8.addEventListener('click', changeColor);
+let c9 = document.querySelector('#Paris');
+c9.addEventListener('click', changeColor);
+let c10 = document.querySelector('#RiodeJaneiro');
+c10.addEventListener('click', changeColor);
+let c11= document.querySelector('#NewYork');
+c11.addEventListener('click', changeColor);
+let c12= document.querySelector('#LosAngeles');
+c12.addEventListener('click', changeColor);
+function changeColor(event) {
+	let r = Math.floor(Math.random() * 256);
+	let g = Math.floor(Math.random() * 256);
+	let b = Math.floor(Math.random() * 256);
+	let color = 'rgb(' + r + ',' + g + ',' + b + ')';
+	let div = event.target;
+	div.style.backgroundColor = color;
+}
+
 
 let b1 = document.querySelector('button#japan');
 let b2 = document.querySelector('button#Cairo');
@@ -182,9 +215,9 @@ function showResult(resp) {
     let p5 = document.querySelector('span#humidity');
     p1.textContent ='都市名:'+toshi; 
     p2.textContent ='天気:'+weather; 
-    p3.textContent ='最高気温:'+max; 
-    p4.textContent ='最低気温:'+min; 
-    p5.textContent ='湿度:'+situdo; 
+    p3.textContent ='最高気温:'+max+'℃'; 
+    p4.textContent ='最低気温:'+min+'℃'; 
+    p5.textContent ='湿度:'+situdo+'%'; 
 
     // data をコンソールに出力
     
