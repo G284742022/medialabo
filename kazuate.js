@@ -21,8 +21,8 @@ function hantei() {
   a.textContent = yoso;          
   let r = document.querySelector('p#result');                
   if(4<=kaisu){
-    console.log('答えは'+kotae+'でした。すでにゲームは終わっています。');
-    r.textContent ='正解です。おめでとう!';        
+    //console.log('答えは'+kotae+'でした。すでにゲームは終わっています。');
+    r.textContent ='答えは'+kotae+'でした。すでにゲームは終わっています。';        
   }else{
     kaisu=kaisu+1;
       let k= document.querySelector('span#kaisu');         
